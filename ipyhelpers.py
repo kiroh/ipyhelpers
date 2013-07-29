@@ -1,3 +1,4 @@
+from IPython.display import display
 from IPython.core.display import HTML
 from pandas import DataFrame
 
