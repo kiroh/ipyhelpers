@@ -1,3 +1,11 @@
-htprint = lambda s: display(HTML(s))
-showT = lambda _: htprint(DataFrame(_).to_html())
-h = lambda n, s: htprint('<h%d>%s</h%d>' % (n, s, n))
+from IPython.core.display import HTML
+from pandas import DataFrame
+
+def htprint(s):
+	display(HTML(s))
+	
+def showT(data):
+	htprint(DataFrame(data).to_html())
+	
+def h(n, s):
+	htprint('<h%d>%s</h%d>' % (n, s, n))
