@@ -13,3 +13,6 @@ def showT(data, rows=None):
 	
 def h(n, s):
 	htprint('<h%d>%s</h%d>' % (n, s, n))
+	
+def hr():
+	htprint('<hr>')
